@@ -1,40 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Portfolio Project
 
-First, run the development server:
+This is a personal portfolio project built using Typescript, Next.js, Tailwind CSS, and tRPC[not used]. The portfolio showcases various projects and provides information about the developer.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: A React framework for building server-side rendered and statically generated web applications.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **TypeScript**: A strongly typed programming language that builds on JavaScript.
+- **React**: A JavaScript library for building user interfaces.
+- **Framer Motion**: A library for animations in React.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Note
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **There are a lot of unwanted files existing which i plan to clean in the future**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project is organized into several key directories and files:
 
-## Learn More
+- **`src/pages`**: Contains the main pages of the application.
 
-To learn more about Next.js, take a look at the following resources:
+  - **`index.tsx`**: The main landing page.
+  - **`projects.tsx`**: Displays various projects.
+  - **`home.tsx`**: Contains the landing section of the homepage.
+  - **`Navbar.tsx`**: Contains the navigation bar component.
+- **`src/components/ui`**: Contains reusable UI components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - **`wobble-card.tsx`**: A custom card component with animation.
+  - **`about-loader.tsx`**: A loader component for the about section.
+  - **`multi-step-loader.tsx`**: A multi-step loader component.
+- **`tailwind.config.ts`**: Configuration file for Tailwind CSS.
+- **`package.json`**: Lists the project dependencies and scripts.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## How to Run the Project
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Install Dependencies**: Run `bun install` to install all required dependencies.
+2. **Start the Development Server**: Run the development server using `bun run dev`
+3. **Build the Project**: To build the project for production, run `bun run build`
